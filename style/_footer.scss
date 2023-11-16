@@ -1,0 +1,31 @@
+.footer-aera {
+  h1 {
+    color: #f9f9f9;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  i {
+    color: #a1a1a1;
+    font-size: 25px;
+    padding-left: 13px;
+    padding-right: 13px;
+    cursor: pointer;
+    transition: color ease 0.8s;
+    @include respond-below(sm) {
+      font-size: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &:hover {
+      color: #e18c15;
+    }
+  }
+  p {
+    color: #f9f9f9;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 35px;
+  }
+}

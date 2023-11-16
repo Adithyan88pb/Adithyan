@@ -1,0 +1,51 @@
+.Services-sec {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  @include respond-below(sm) {
+    padding-left: 20px;
+  }
+  @include respond-below(xs) {
+    padding-left: 10px;
+  }
+  .Services-heading {
+    h1 {
+      color: $h3-color;
+      font-size: 60px;
+      font-weight: 600;
+    }
+  }
+  .Services .card {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    margin-top: 30px;
+    transition:  ease 0.8s;
+    &:hover{
+      background-color: black;
+     
+    }
+    @include respond-below(sm) {
+      padding-left: 20px;
+    }
+    h2 {
+      font-size: 24px;
+      color: #fafafa;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    i {
+      font-size: 20px;
+      color: #fafafa;
+      padding-bottom: 11px;
+      margin-left: 8px;
+      margin-left: 8px;
+      cursor: none;
+    }
+    p {
+      font-size: 16px;
+      color: #fafafa;
+      font-weight: 500;
+    }
+  }
+}

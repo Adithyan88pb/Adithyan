@@ -1,0 +1,202 @@
+/*--- RESETS ---*/
+
+body {
+  margin: 0px;
+}
+
+/*--- HEADER ---*/
+.mainHeader {
+  display: flex;
+  padding: 0 5%;
+  flex: 0 0 80px;
+//   border-bottom: 1px solid #c58729;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  background-color: #111111;
+
+  top: -10%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  box-shadow: 0 2px 0 #835212, 5px 0 0 #48760788;
+
+  z-index: 50;
+
+  position: fixed;
+  width: 100%;
+
+  transition: all 0.3s ease-in;
+  &.active__menu {
+    top: 0%;
+    opacity: 1;
+
+    visibility: visible;
+    pointer-events: visible;
+  }
+  
+}
+
+.mainHeader h1 {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: 0.4px;
+  margin: 0;
+  line-height: 58px;
+}
+
+.mainHeader h1 a {
+  text-decoration: none;
+  opacity: 0.8;
+  color: $primary-color;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color ease 0.8s;
+}
+
+/*--- MAIN NAV COMMON ---*/
+
+ul .MainNav {
+  margin: 0;
+  padding: 0;
+ 
+}
+
+ul.MainNav li {
+  list-style-type: none;
+}
+
+ul.MainNav li a {
+  opacity: 0.8;
+  color: $primary-color;
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color ease 0.8s;
+}
+
+ul.MainNav li a:hover {
+  color: rgb(255, 144, 40);
+}
+
+/*--- MOBILE MENU BUTTON ---*/
+
+.navMobile {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 20px;
+  padding-right: 5%;
+}
+
+.navMobile a {
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.navMobile a:after,
+.navMobile a:before,
+.navMobile a div {
+  background-color: #faf9f9;
+  border-radius: 3px;
+  content: "";
+  display: block;
+  height: 2px;
+  margin: 7px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navigationActive a div {
+  transform: scale(0);
+  background-color: #fff;
+  
+}
+
+.navigationActive a:before {
+  transform: translateY(6px) rotate(135deg);
+  background-color: #fff;
+}
+
+.navigationActive a:after {
+  transform: translateY(-12px) rotate(-135deg);
+  background-color: #fff;
+}
+
+/*animation stopper*/
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
+/*--- MEDIA QUERIES ---*/
+
+@media (max-width: 600px) {
+  .navigationActive.mainHeader h1 a {
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    display: none;
+  }
+
+  .navigationActive ul.MainNav {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    transition: transform 0.6s cubic-bezier(0.65, 0, 0.07, 1),
+      -webkit-transform 0.6s cubic-bezier(0.65, 0, 0.07, 1);
+  }
+
+  ul.MainNav {
+    background-color: #111;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin-top: 2em;
+    padding: 100px 0 0 0;
+    text-align: center;
+    transition: transform 0.6s cubic-bezier(0.65, 0, 0.07, 1),
+      opacity 0.01s linear 0.6s,
+      -webkit-transform 0.6s cubic-bezier(0.65, 0, 0.07, 1);
+    -webkit-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  ul.MainNav li a {
+    color: #fff;
+    font-size: 42px;
+    line-height: 1.45em;
+  }
+}
+
+@media (min-width: 600px) {
+  .mainHeader {
+    flex-direction: row;
+  }
+
+  ul.MainNav {
+    // height: 80px;
+    display: block;
+  }
+
+  ul.MainNav li {
+    float: left;
+  }
+
+  ul.MainNav li a {
+    line-height: 58px;
+    padding: 0 1em;
+  }
+
+  .mainHeader nav {
+    margin-left: auto;
+  }
+
+  .navMobile {
+    display: none;
+  }
+}

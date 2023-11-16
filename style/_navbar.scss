@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;700;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: $black-color;
+}
+
+// .navbar {
+//   // padding: 0 20px;
+//   // // background-color: #fff;
+//   // background-color: #18191d;
+//   // height: 83px;
+//   // display: flex;
+//   // align-items: center;
+//   // justify-content: space-between;
+
+//   // top: 0;
+  
+//   // button {
+//   //   border: none;
+//   //   &:focus {
+//   //     @include respond-below(sm) {
+//   //       box-shadow: none;
+//   //     }
+//   //   }
+//   //   .material-symbols-outlined {
+//   //     font-size: 40px;
+//   //     color: #fafafa;
+//   //     outline: none;
+//   //   }
+//   // }
+
+//   // .navbar-brand {
+//   //   opacity: 0.8;
+//   //   color: $primary-color;
+//   //   font-size: 14px;
+//   //   font-weight: 600;
+//   //   transition: color ease 0.8s;
+
+//   //   &:hover {
+//   //     color: $atage-color;
+//   //   }
+//   // }
+//   // .navbar-nav .nav-item a {
+//   //   opacity: 0.8;
+//   //   color: $primary-color;
+//   //   font-size: 13px;
+//   //   font-weight: 500;
+//   //   margin-left: 25px;
+//   //   transition: color ease 0.8s;
+
+//   //   &:hover {
+//   //     color: rgb(255, 144, 40);
+//   //   }
+//   // }
+// }

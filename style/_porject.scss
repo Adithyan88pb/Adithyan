@@ -1,0 +1,59 @@
+.Project-sec {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  @include respond-below(sm) {
+    padding-left: 20px;
+  }
+
+  .content .card {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    margin-top: 30px;
+
+    h5 {
+      color: #15d7c8;
+      font-size: 15px;
+    }
+
+    i {
+      font-size: 16px;
+      color: #fafafa;
+      cursor: pointer;
+      margin-left: 8px;
+      margin-left: 8px;
+      &:hover {
+        color: #d78015;
+      }
+    }
+    h3 {
+      font-size: 24px;
+      color: #fafafa;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      color: #818181;
+      font-weight: 500;
+    }
+
+    .badge {
+      background-image: linear-gradient(
+        to right,
+        rgb(13, 138, 221),
+        rgb(250, 64, 2)
+      );
+      color: #fafafa;
+      margin-right: 2px;
+    }
+  }
+
+  .heading {
+    h1 {
+      color: $h3-color;
+      font-size: 60px;
+      font-weight: 600;
+    }
+  }
+}

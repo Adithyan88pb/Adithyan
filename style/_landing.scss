@@ -1,0 +1,85 @@
+.landing-sec {
+  //    height: 100vh;
+  margin-bottom: 150px;
+  padding-top: 180px;
+
+  h3 {
+    color: $h3-color;
+    font-size: 18px;
+    font-weight: 600;
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+ 
+    @include respond-below(sm) {
+      font-size: 18px;
+    }
+    @include respond-below(xs) {
+      font-size: 15px;
+    }
+  }
+
+  h1 {
+    font-size: 82px;
+    font-weight: 700;
+    color: $h3-color;
+    // background-image: url(https://media.giphy.com/media/IZtRbZKQBCA3m/giphy.gif);
+    background-image: url(https://media.giphy.com/media/kjFyZgX4rSZby/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    // text-transform: uppercase;
+   
+    margin: 10px 0;
+    @include respond-below(sm) {
+      font-size: 64px;
+    }
+    @include respond-below(xs) {
+      font-size: 42px;
+    }
+
+    span {
+      // background-image: linear-gradient(
+      //   to right,
+      //   rgb(13, 138, 221),
+      //   rgb(250, 64, 2)
+      // );
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+    }
+  }
+
+  p {
+    color: #a1a1a1;
+    font-size: 18px;
+    font-weight: 500;
+    @include respond-below(sm) {
+      font-size: 15px;
+    }
+    @include respond-below(xs) {
+      font-size: 13px;
+    }
+  }
+
+  .btn {
+    background-image: linear-gradient(
+      to right,
+      rgb(13, 138, 221),
+      rgb(250, 64, 2)
+    );
+    color: $h3-color;
+    height: 50px;
+    width: 150px;
+    font-weight: 600;
+    border-radius: 10px;
+  }
+  .btn a {
+    transition: color ease 0.8s;
+    &:hover {
+      color: black;
+    }
+  }
+}
