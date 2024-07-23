@@ -46,7 +46,7 @@ window.addEventListener("scroll", () => {
 
 let button = document.getElementById("navButton");
 
-//const menu1 = document.getElementsByClassName("MainNav")[0];
+const menu1 = document.getElementsByClassName("MainNav")[0];
 
 button.addEventListener("click", function (e) {
   e.preventDefault(); //prevent default click
